@@ -1,0 +1,472 @@
+{
+  "metadata": {
+    "title": "NurturaGyno Maternal Health Educational Knowledge Base",
+    "version": "1.0.0",
+    "description": "Rule-based educational knowledge base strictly extracted from official World Health Organization (WHO) Antenatal Care guidelines. Non-diagnostic, educational only.",
+    "primary_sources": [
+      {
+        "document_title": "WHO recommendations on antenatal care for a positive pregnancy experience",
+        "publisher": "World Health Organization (WHO), Geneva, Switzerland",
+        "year": "2016",
+        "isbn": "978 92 4 154991 2"
+      },
+      {
+        "document_title": "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience: Summary",
+        "publisher": "USAID / Maternal and Child Survival Program / WHO",
+        "year": "2018",
+        "reference": "WHO/RHR/18.02"
+      }
+    ],
+    "safety_disclaimer": "This chatbot provides non-diagnostic antenatal health education based strictly on WHO guidelines. It does not provide medical diagnosis, clinical decision support, risk scores, or autonomous medical advice. In cases of pain, bleeding, fever, leaking fluid, or reduced baby movement, seek immediate medical care from a gynecologist/obstetrician."
+  },
+  "topics": [
+    {
+      "topic_id": "anc_schedule",
+      "topic": "Antenatal Care (ANC) Contact Schedule (2016 WHO 8-Contact Model)",
+      "category": "Health Systems & Care Schedule",
+      "example_user_questions": [
+        "How many antenatal visits should I have?",
+        "What is the recommended checkup schedule during pregnancy?",
+        "When should my first doctor appointment be?",
+        "How often do I need to see my gynecologist?",
+        "What is the WHO 8-contact antenatal care model?",
+        "When should I go for pregnancy appointments in each trimester?"
+      ],
+      "concise_educational_response": "The World Health Organization (WHO) recommends an antenatal care (ANC) model with a minimum of eight contacts between a pregnant woman and healthcare providers to reduce perinatal mortality and improve the pregnancy experience. The previous 4-visit model is no longer recommended because increased contacts provide critical opportunities to monitor well-being and detect problems early. The scheduled contacts are: Contact 1 takes place in the first trimester (up to 12 weeks of gestation); Contacts 2 and 3 occur in the second trimester at 20 weeks and 26 weeks; and Contacts 4 to 8 occur in the third trimester at 30, 34, 36, 38, and 40 weeks of gestation. If birth has not occurred by 41 weeks, return for delivery evaluation.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendation E.7",
+        "page_reference": "Main Guideline pp. 101–104 (narrative), p. 105 (Box 5 schedule), pp. 108–116 (Table 2); Summary Brief p. 2 (Table 1), p. 3 (Table 2)",
+        "chapter_or_table": "Chapter 3.E & Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Minimum 8 contacts: 1 in first trimester (up to 12 weeks), 2 in second trimester (20 and 26 weeks), and 5 in third trimester (30, 34, 36, 38, and 40 weeks).",
+        "The third trimester has the highest frequency of contacts because it is the period of greatest antenatal risk for mother and baby.",
+        "WHO uses the word 'contact' rather than 'visit' to emphasize active, supportive, respectful connection between woman and healthcare provider.",
+        "Any missed intervention from an earlier contact should be delivered at the next contact."
+      ],
+      "questions_to_ask_doctor": [
+        "What milestones or tests will we be completing at my upcoming contact?",
+        "Who can I contact between scheduled visits if I have non-urgent questions?",
+        "What signs mean I should not wait for my next scheduled appointment?"
+      ],
+      "clinical_safety_notice": "This schedule is for routine antenatal care. If complications or danger signs occur, contact your healthcare provider immediately regardless of scheduled visit dates."
+    },
+    {
+      "topic_id": "nutrition",
+      "topic": "Maternal Nutrition & Dietary Counselling",
+      "category": "Nutritional Interventions",
+      "example_user_questions": [
+        "What should I eat during pregnancy?",
+        "How much weight should I gain while pregnant?",
+        "Are protein supplements good for pregnancy?",
+        "Can I drink coffee or tea while pregnant?",
+        "What foods provide balanced energy for my baby?",
+        "What does WHO recommend for maternal diet?"
+      ],
+      "concise_educational_response": "WHO recommends counselling on healthy eating and keeping physically active to stay healthy and prevent excessive gestational weight gain. A healthy diet contains adequate energy, protein, vitamins, and minerals obtained through a variety of wholesome foods including green and orange vegetables, meat, fish, beans, nuts, whole grains, and fruit. In undernourished populations, balanced energy and protein dietary supplementation is recommended to reduce stillbirths and small-for-gestational-age babies. However, high-protein supplements are NOT recommended because evidence shows they can increase the risk of small-for-gestational-age babies. For caffeine, pregnant women consuming over 300 mg daily should lower caffeine intake (found in coffee, tea, colas, chocolate) to reduce the risk of pregnancy loss and low birth weight.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendations A.1.1, A.1.2, A.1.3, A.1.4, A.10",
+        "page_reference": "Main Guideline pp. 14–22, 32–40, 56–57; Summary Brief pp. 4–5 (Table 3)",
+        "chapter_or_table": "Chapter 3.A: Nutritional interventions; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Eat a diverse, balanced diet rich in green and orange vegetables, legumes, nuts, whole grains, fish, fruit, and lean meats.",
+        "High-protein powders or high-protein supplements are NOT recommended as they may restrict fetal growth.",
+        "Limit caffeine to below 300 mg per day (a typical instant coffee has ~60 mg; commercial brewed coffee may have >150 mg; tea/colas typically have <50 mg per cup).",
+        "Most normal weight gain occurs after 20 weeks of gestation; target ranges depend on pre-pregnancy BMI (normal BMI 18.5–24.9: recommended gain is 11.5–16 kg)."
+      ],
+      "questions_to_ask_doctor": [
+        "Is my gestational weight gain progressing appropriately for my pre-pregnancy BMI?",
+        "Do I need specific dietary adjustments based on my food culture or dietary restrictions?",
+        "Are there any foods or herbal remedies available locally that I should avoid?"
+      ],
+      "clinical_safety_notice": "Individual nutritional needs may vary with medical conditions such as diabetes or renal disorders. Consult your doctor or nutritionist for specific personalized dietary planning."
+    },
+    {
+      "topic_id": "iron_and_folic_acid",
+      "topic": "Iron and Folic Acid Supplementation",
+      "category": "Nutritional Interventions",
+      "example_user_questions": [
+        "Why do I need to take folic acid and iron?",
+        "What is the recommended daily dose of iron and folic acid?",
+        "When should I start taking folic acid?",
+        "What if iron supplements make me nauseous or constipated?",
+        "Can I take iron once a week instead of daily?",
+        "How much iron is needed to prevent maternal anaemia?"
+      ],
+      "concise_educational_response": "WHO recommends daily oral iron and folic acid supplementation with 30 mg to 60 mg of elemental iron and 400 µg (0.4 mg) of folic acid for pregnant women to prevent maternal anaemia, puerperal sepsis, low birth weight, and preterm birth. Folic acid should be commenced as early as possible (ideally before conception) to prevent neural tube defects. In populations where anaemia is a severe public health problem (prevalence ≥ 40%), a daily dose of 60 mg elemental iron is preferred. If a woman is diagnosed with anaemia (haemoglobin < 110 g/L in first/third trimester or < 105 g/L in second trimester), the elemental iron dose should be increased to 120 mg daily until haemoglobin returns to normal. Intermittent weekly supplementation (120 mg elemental iron + 2800 µg folic acid once weekly) is an alternative only if daily iron is intolerable due to side effects and community anaemia prevalence is under 20%.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendations A.2.1, A.2.2",
+        "page_reference": "Main Guideline pp. 23–26, 41–44, 72 (malaria remark); Summary Brief p. 4 (Table 3), p. 7",
+        "chapter_or_table": "Chapter 3.A: Nutritional interventions; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Standard daily dose: 30 mg to 60 mg elemental iron + 400 µg (0.4 mg) folic acid throughout pregnancy.",
+        "60 mg elemental iron is equivalent to 300 mg ferrous sulfate heptahydrate, 180 mg ferrous fumarate, or 500 mg ferrous gluconate.",
+        "Folic acid should be started prior to conception or as early as possible to prevent neural tube defects.",
+        "Do not take iron and calcium supplements at the same time; separate them by several hours to avoid blocking iron absorption.",
+        "In malaria-endemic areas taking sulfadoxine-pyrimethamine (SP), avoid high doses of folic acid (≥ 5 mg) because high doses interfere with the antimalarial medicine."
+      ],
+      "questions_to_ask_doctor": [
+        "What is my current haemoglobin level and does my iron dose need adjustment?",
+        "What strategies can help me manage nausea or constipation from iron pills?",
+        "Which brand or compound of iron (sulfate, fumarate, gluconate) is best for me?"
+      ],
+      "clinical_safety_notice": "Dosage increases for diagnosed anaemia should be prescribed and monitored by your healthcare provider following laboratory haemoglobin testing."
+    },
+    {
+      "topic_id": "calcium",
+      "topic": "Calcium Supplementation in Pregnancy",
+      "category": "Nutritional Interventions",
+      "example_user_questions": [
+        "Do I need to take calcium pills while pregnant?",
+        "What does calcium do for pre-eclampsia prevention?",
+        "How much calcium should a pregnant woman take daily?",
+        "Can I take calcium and iron tablets together?",
+        "How should I space out my calcium doses?"
+      ],
+      "concise_educational_response": "In populations with low dietary calcium intake, WHO recommends daily calcium supplementation with 1.5 g to 2.0 g of oral elemental calcium for pregnant women to reduce the risk of pre-eclampsia. The total daily dose should ideally be divided into three doses taken at mealtimes to improve absorption and acceptability. Crucially, calcium and iron supplements should NOT be taken together because they compete for absorption in the gut; pregnant women should take calcium and iron several hours apart rather than concomitantly. Dietary counselling should also promote adequate calcium intake through locally available calcium-rich foods such as dairy products, green leafy vegetables, and fortified foods.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendation A.3",
+        "page_reference": "Main Guideline pp. 27–29, 45–47, 109 (Table 2); Summary Brief pp. 4–5 (Table 3)",
+        "chapter_or_table": "Chapter 3.A: Nutritional interventions; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Recommended dose: 1.5 g to 2.0 g daily elemental calcium in areas with low dietary calcium intake.",
+        "Primary clinical purpose: Significantly reduces the risk of pre-eclampsia (high blood pressure and protein in urine).",
+        "Administration timing: Divide into 3 doses taken at mealtimes.",
+        "Critical rule: Administer calcium and iron supplements several hours apart to prevent inhibition of iron absorption."
+      ],
+      "questions_to_ask_doctor": [
+        "Is my routine daily calcium intake through my diet adequate?",
+        "How should I schedule my calcium tablets relative to my iron and prenatal vitamins?",
+        "Are there any side effects I should watch for with calcium supplements?"
+      ],
+      "clinical_safety_notice": "Do not exceed recommended calcium dosages. If you have pre-existing kidney disease or kidney stones, discuss calcium supplementation with your gynecologist."
+    },
+    {
+      "topic_id": "routine_investigations",
+      "topic": "Routine Antenatal Investigations and Screenings",
+      "category": "Maternal Assessment & Diagnostics",
+      "example_user_questions": [
+        "What routine tests do I need during pregnancy?",
+        "Why do I need urine and blood tests at antenatal visits?",
+        "What is gestational diabetes testing and when is it done?",
+        "When is anaemia checked in pregnancy?",
+        "Why are HIV, syphilis, and tuberculosis tested in pregnancy?",
+        "What laboratory investigations does WHO recommend for ANC?"
+      ],
+      "concise_educational_response": "WHO guidelines outline specific evidence-based routine assessments and laboratory investigations: (1) Anaemia testing: Full blood count (FBC) is recommended; if unavailable, on-site haemoglobin testing with a haemoglobinometer is recommended over a colour scale. Tested at Contact 1, Contact 3 (26 weeks), and Contact 6 (36 weeks). (2) Asymptomatic Bacteriuria (ASB): Midstream urine culture is the gold standard; if unavailable, on-site Gram-staining is recommended over dipsticks. (3) Gestational Diabetes Mellitus (GDM): Hyperglycaemia first detected in pregnancy is classified as GDM or diabetes mellitus using WHO 2013 criteria, usually assessed between 24 and 28 weeks of gestation with a 75 g 2-hour oral glucose tolerance test. (4) Infectious disease screening: Provider-initiated HIV testing and counselling is routine in high-prevalence settings and recommended in low-prevalence settings to prevent mother-to-child transmission; syphilis screening is recommended at the first contact and repeated in the third trimester; systematic screening for active TB is recommended where TB prevalence is ≥ 100/100,000. In addition, checking maternal blood pressure, testing for proteinuria, and monitoring maternal weight are established good clinical practices at every ANC contact.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendations B.1.1, B.1.2, B.1.4, B.1.7, B.1.8",
+        "page_reference": "Main Guideline pp. 40–52, 58–70, 110–112 (Table 2); Summary Brief pp. 5–7 (Tables 4 & 5)",
+        "chapter_or_table": "Chapter 3.B: Maternal assessment; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Blood pressure and urine protein checks at every visit are essential standard clinical practices to detect pre-eclampsia early.",
+        "Anaemia check: Blood haemoglobin tested at first contact, 26 weeks, and 36 weeks (threshold for anaemia: Hb < 110 g/L in 1st/3rd trimester; Hb < 105 g/L in 2nd trimester).",
+        "Urine check: Midstream urine culture or Gram stain detects asymptomatic bacteriuria, which if untreated can progress to kidney infection and preterm birth.",
+        "Blood sugar: Oral glucose tolerance test (OGTT) is standard between 24 and 28 weeks to identify gestational diabetes.",
+        "Infection screening: HIV testing with consent and confidentiality; syphilis screening in first and third trimesters to prevent congenital syphilis."
+      ],
+      "questions_to_ask_doctor": [
+        "What were my baseline haemoglobin, blood group, and Rh factor results?",
+        "When is my 2-hour glucose tolerance test scheduled?",
+        "Were there any bacteria or protein detected in my urine test?"
+      ],
+      "clinical_safety_notice": "Only laboratory tests interpreted by a qualified medical professional can diagnose conditions like gestational diabetes, anaemia, or pre-eclampsia. This chatbot cannot evaluate laboratory test values."
+    },
+    {
+      "topic_id": "ultrasound",
+      "topic": "Ultrasound Scanning in Pregnancy",
+      "category": "Fetal Assessment & Imaging",
+      "example_user_questions": [
+        "When should I get my first pregnancy ultrasound?",
+        "How many ultrasounds are recommended by WHO?",
+        "Do I need an ultrasound in the third trimester?",
+        "What is the purpose of an early ultrasound scan?",
+        "Is a routine Doppler ultrasound necessary for every pregnancy?"
+      ],
+      "concise_educational_response": "WHO recommends one routine ultrasound scan before 24 weeks of gestation (early ultrasound, ideally at Contact 1 up to 12 weeks or Contact 2 at 20 weeks). An early scan accurately estimates gestational age, improves detection of fetal anomalies and multiple pregnancies (twins/multiples), reduces the need for induction of labour for post-term pregnancy, and enhances the woman's pregnancy experience. A routine ultrasound scan after 24 weeks (late ultrasound) is NOT recommended for women who have already had an early scan because evidence shows it does not improve maternal or perinatal outcomes. However, a late scan may be considered if a woman has not had an early scan, specifically to check fetal presentation, number of fetuses, and placental location. Routine Doppler ultrasound of fetal blood vessels is NOT recommended in healthy pregnancies.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendations B.2.4, B.2.5",
+        "page_reference": "Main Guideline pp. 58–62, 76–80, 106, 113 (Table 2); Summary Brief pp. 5–6 (Table 4)",
+        "chapter_or_table": "Chapter 3.B.2: Fetal assessment; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Recommended scan: One early ultrasound before 24 weeks of gestation (optimally up to 12 weeks or at 20 weeks).",
+        "Key benefits: Accurate due date dating, confirmation of fetal heartbeat/viability, early detection of multiple pregnancies, and screening for major anatomical structures.",
+        "Routine late ultrasound (>24 weeks) is not routinely recommended if an early scan was completed normally.",
+        "Routine Doppler ultrasound of umbilical or fetal vessels is not recommended for uncomplicated pregnancies and is reserved for specific high-risk clinical indications."
+      ],
+      "questions_to_ask_doctor": [
+        "Did my early scan confirm an accurate gestational age and estimated due date (EDD)?",
+        "Was the location of my placenta and the number of babies clearly identified?",
+        "Are there any medical indications in my pregnancy that would warrant an additional scan?"
+      ],
+      "clinical_safety_notice": "Ultrasound scans must be performed and interpreted by trained healthcare professionals. Ultrasound reports require clinical correlation with your obstetrician."
+    },
+    {
+      "topic_id": "maternal_fetal_assessment",
+      "topic": "Maternal and Fetal Well-being Assessment",
+      "category": "Maternal and Fetal Assessment",
+      "example_user_questions": [
+        "Should I do a daily kick count chart for my baby?",
+        "What does WHO say about fetal movement counting?",
+        "How is baby's growth measured by the doctor?",
+        "What is symphysis-fundal height measurement?",
+        "Do I need routine fetal heart monitoring (cardiotocography CTG)?",
+        "How do healthcare providers check if my baby is growing well?"
+      ],
+      "concise_educational_response": "WHO guidelines evaluate several standard fetal monitoring methods: (1) Daily fetal movement counting (such as Cardiff 'count-to-ten' kick charts) is recommended only in the context of rigorous research, rather than as a routine practice for all women. However, healthy pregnant women should be made aware of the importance of fetal movements in the third trimester and must report any perceived decrease or cessation of fetal movement to their healthcare provider immediately. (2) Symphysis-fundal height (SFH) measurement: Replacing abdominal palpation with SFH tape measurement is not recommended to improve outcomes; healthcare providers should maintain the established practice of their setting. (3) Antenatal cardiotocography (CTG): Routine antenatal CTG (fetal heart rate tracings) is NOT recommended for healthy pregnant women to improve outcomes. (4) Intimate partner violence (IPV): Clinical enquiry about IPV should be strongly considered at ANC visits when assessing conditions that may be complicated by violence, provided privacy, confidentiality, and referral support are guaranteed.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendations B.1.3, B.2.1, B.2.2, B.2.3",
+        "page_reference": "Main Guideline pp. 45–47, 53–57, 63–65, 71–75, 111–112; Summary Brief pp. 5–6 (Table 4)",
+        "chapter_or_table": "Chapter 3.B: Maternal and fetal assessment; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "While formal daily kick charts are not routinely mandated for all pregnancies, awareness of baby's movement patterns in the third trimester is vital.",
+        "A noticeable reduction, slowdown, or absence of fetal movement is a critical warning sign that requires urgent same-day evaluation.",
+        "Fetal growth is monitored clinically at every visit starting in the second trimester using abdominal palpation or symphysis-fundal height (SFH) measurement.",
+        "Routine continuous electronic fetal heart tracing (CTG) is not recommended for low-risk routine care before labour."
+      ],
+      "questions_to_ask_doctor": [
+        "What should I expect regarding my baby's daily movement patterns as I enter the third trimester?",
+        "Is my fundal height measurement tracking well with my gestational weeks?",
+        "What is your clinic's emergency protocol if I feel my baby is moving significantly less?"
+      ],
+      "clinical_safety_notice": "A reduction or cessation in fetal movement must NEVER be ignored. Contact your maternity unit or gynecologist immediately for urgent assessment."
+    },
+    {
+      "topic_id": "physical_activity",
+      "topic": "Physical Activity and Safe Exercise During Pregnancy",
+      "category": "Lifestyle and Well-being",
+      "example_user_questions": [
+        "Is it safe to exercise while pregnant?",
+        "What kinds of exercise are recommended during pregnancy?",
+        "Can exercise prevent back pain during pregnancy?",
+        "How much physical activity should I do each day?",
+        "Are there exercises I should avoid while pregnant?"
+      ],
+      "concise_educational_response": "WHO recommends counselling about keeping physically active during pregnancy to stay healthy and to prevent excessive gestational weight gain. A healthy lifestyle includes aerobic physical activity and strength-conditioning exercise aimed at maintaining a good level of fitness throughout pregnancy, without trying to reach peak athletic fitness or train for competition. In addition, regular exercise throughout pregnancy is specifically recommended to prevent low back and pelvic pain. Safe activities include moderate-intensity aerobic exercise such as daily brisk walking, prenatal water aerobics/swimming, and prenatal yoga or modified strength training. Pregnant women should choose activities with minimal risk of loss of balance, falls, and abdominal trauma. If symptoms of dizziness, vaginal bleeding, fluid leaking, or chest pain occur, exercise should stop immediately.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendations A.1.1, D.4",
+        "page_reference": "Main Guideline pp. 15–17, 33–35, 80–81, 98–99; Summary Brief p. 4 (Table 3), p. 8 (Table 6)",
+        "chapter_or_table": "Chapter 3.A & Chapter 3.D: Interventions for common physiological symptoms"
+      },
+      "key_educational_takeaways": [
+        "Regular physical activity helps maintain cardiovascular fitness, prevents excessive weight gain, and reduces low back and pelvic pain.",
+        "Aim for moderate-intensity aerobic activities such as walking, swimming, or modified stretching.",
+        "Avoid activities with a risk of falling, physical contact, or abdominal impact (e.g. contact sports, riding, skiing).",
+        "Stay hydrated and avoid exercising in excessive heat.",
+        "Do not exercise to extreme exhaustion or strive for peak athletic competition during pregnancy."
+      ],
+      "questions_to_ask_doctor": [
+        "Are there any medical reasons or placental conditions in my pregnancy that would limit physical activity?",
+        "Is my current exercise routine safe to continue as my pregnancy progresses?",
+        "Can you recommend prenatal physiotherapy exercises for back or pelvic discomfort?"
+      ],
+      "clinical_safety_notice": "Women with conditions like cervical cerclage, persistent vaginal bleeding, placenta praevia, or pre-eclampsia must seek clearance from their obstetrician before engaging in exercise."
+    },
+    {
+      "topic_id": "vaccination",
+      "topic": "Maternal Immunization & Tetanus Toxoid Vaccination",
+      "category": "Preventive Measures",
+      "example_user_questions": [
+        "What vaccines are recommended during pregnancy?",
+        "Why is the tetanus injection given during pregnancy?",
+        "How many tetanus shots do I need while pregnant?",
+        "When should the tetanus toxoid vaccine be administered?",
+        "Can tetanus vaccine harm my unborn baby?"
+      ],
+      "concise_educational_response": "WHO recommends tetanus toxoid vaccination for all pregnant women, depending on previous vaccination exposure, to prevent neonatal mortality from tetanus. Tetanus is caused by spores universally present in the environment that can enter an unhealed umbilical cord stump at birth. Maternal vaccination allows protective antibodies to cross the placenta to safeguard the newborn. If a woman has not previously been vaccinated or her status is unknown, she should receive two doses of a tetanus toxoid-containing vaccine (TT-CV) one month apart, with the second dose given at least two weeks before delivery. A third dose is recommended six months later to extend protection to at least five years, followed by two subsequent doses in later years or pregnancies for lifetime protection (total of 5 doses). In addition, ANC contacts should verify vaccination status and administer vaccines recommended under national immunization schedules.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendation C.5",
+        "page_reference": "Main Guideline pp. 70–71, 88–89, 114 (Table 2); Summary Brief p. 7 (Table 5)",
+        "chapter_or_table": "Chapter 3.C: Preventive measures; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Tetanus toxoid-containing vaccine (TT-CV) is universally recommended to protect newborns from fatal neonatal tetanus.",
+        "Schedule for unvaccinated women: Dose 1 as early as possible in pregnancy; Dose 2 given 1 month later (and at least 2 weeks before birth).",
+        "A total of five documented doses across childbearing years provides lifelong maternal and neonatal protection.",
+        "Decades of global use show tetanus vaccination in pregnancy is safe for both mother and fetus.",
+        "Healthcare providers use ANC visits to check personal vaccination cards and update maternal records."
+      ],
+      "questions_to_ask_doctor": [
+        "Based on my past vaccination records, how many tetanus doses do I need in this pregnancy?",
+        "Are there other recommended seasonal vaccines (e.g. influenza) offered in our local clinic?",
+        "When will my baby receive their first post-birth vaccinations?"
+      ],
+      "clinical_safety_notice": "Vaccination histories must be reviewed with your antenatal care provider to determine the exact number of booster doses required."
+    },
+    {
+      "topic_id": "common_pregnancy_symptoms",
+      "topic": "Management of Common Physiological Pregnancy Symptoms",
+      "category": "Physiological Symptoms & Relief",
+      "example_user_questions": [
+        "How do I manage common pregnancy symptoms?",
+        "How can I relieve morning sickness naturally?",
+        "What is safe for heartburn during pregnancy?",
+        "How can I get relief from painful leg cramps?",
+        "What helps with pregnancy constipation and piles?",
+        "What can I do for swollen feet and varicose veins?"
+      ],
+      "concise_educational_response": "Pregnancy causes hormonal and mechanical changes that lead to common discomforts. WHO recommends safe, woman-centred, evidence-based options: (1) Nausea and vomiting: Non-pharmacological options such as ginger, chamomile, vitamin B6 (pyridoxine), and acupuncture/acupressure are recommended for early pregnancy nausea. Symptoms usually resolve in the second half of pregnancy. (2) Heartburn: Dietary and lifestyle changes are recommended (eating smaller, frequent meals, avoiding fatty foods, stopping smoking, elevating the head of the bed). Antacids (magnesium carbonate, aluminium hydroxide) can be used for troublesome symptoms, but do not take them within two hours of iron supplements. (3) Leg cramps: Magnesium, calcium, or non-pharmacological therapies (gentle stretching, foot elevation). (4) Low back and pelvic pain: Regular exercise throughout pregnancy is recommended; physiotherapy, support belts, and acupuncture may be helpful. (5) Constipation: Promoting adequate water intake and dietary fibre (vegetables, fruit, nuts, whole grains); wheat bran or other fibre supplements can be used if dietary changes are insufficient. (6) Varicose veins and leg oedema: Non-pharmacological options such as compression stockings, leg elevation, and water immersion (standing in warm water 29–33°C for 20 minutes) can provide relief.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendations D.1, D.2, D.3, D.4, D.5, D.6",
+        "page_reference": "Main Guideline pp. 74–84, 92–102, 114–115 (Table 2); Summary Brief p. 8 (Table 6)",
+        "chapter_or_table": "Chapter 3.D: Interventions for common physiological symptoms; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Nausea/vomiting: Ginger, chamomile, vitamin B6, or P6 acupressure are effective non-drug first choices.",
+        "Heartburn: Small frequent meals, elevating the head of the bed; antacids can be taken if needed, but separate by 2 hours from iron pills.",
+        "Back and pelvic discomfort: Daily regular exercise, supportive posture, support belts, and physiotherapy.",
+        "Constipation: High fibre diet, generous fluid intake, and wheat bran/fibre supplements.",
+        "Leg swelling/veins: Leg elevation when resting, supportive compression stockings, and avoid prolonged stationary standing."
+      ],
+      "questions_to_ask_doctor": [
+        "Which over-the-counter antacid or fibre supplement is safe for me to use?",
+        "If nausea prevents me from keeping fluids down, when should I be seen at the clinic?",
+        "Could my leg swelling be related to blood pressure rather than normal pregnancy changes?"
+      ],
+      "clinical_safety_notice": "Sudden or asymmetric swelling of the legs, face, or hands, or severe unrelenting vomiting (inability to keep liquids down for 24 hours), requires prompt medical evaluation."
+    },
+    {
+      "topic_id": "birth_preparedness",
+      "topic": "Birth Preparedness and Complication Readiness Planning",
+      "category": "Preparedness & Health Systems",
+      "example_user_questions": [
+        "What is birth preparedness planning?",
+        "How should I prepare for labour and delivery?",
+        "Why is it important to carry my own maternal case notes?",
+        "Can I have a companion with me during labour?",
+        "What is complication readiness in antenatal care?"
+      ],
+      "concise_educational_response": "WHO strongly recommends birth preparedness and complication readiness interventions during antenatal care to increase the use of skilled care at birth and timely use of healthcare facilities if complications arise. An individual birth plan includes: identifying an accredited health facility with skilled birth attendants (midwives or obstetricians), arranging emergency transport in advance, setting aside emergency funds, and designating a trusted birth companion. WHO recommends that every pregnant woman carries her own case notes (maternal record book) to ensure continuity and quality of care wherever she presents. Furthermore, WHO guidelines recommend labour companionship, recognizing that emotional, psychological, and practical support from a chosen companion during labour and childbirth improves outcomes and maternal satisfaction.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Recommendations E.1, E.5.1, and Box 3 (Recommendations 1 & 2)",
+        "page_reference": "Main Guideline pp. 87–88, 96–97 (Box 3), 99, 105–106, 115–116; Summary Brief p. 3 (Table 2), p. 9",
+        "chapter_or_table": "Chapter 3.E: Health systems interventions; Chapter 4: Table 2"
+      },
+      "key_educational_takeaways": [
+        "Prepare a birth plan detailing your planned delivery facility, transport arrangements, emergency contacts, and support companions.",
+        "Carry your maternal case notes/record card to every health visit and keep it readily accessible at home.",
+        "Having a chosen labour companion (partner, mother, doula, or friend) is supported by WHO evidence for improved maternal well-being.",
+        "Know the exact route and phone numbers for your hospital's emergency maternity triage unit."
+      ],
+      "questions_to_ask_doctor": [
+        "What should I pack for the hospital for myself and my newborn baby?",
+        "What is your facility's policy on labour companions and continuous support?",
+        "At what stage of contractions or labour signs should I travel to the hospital?"
+      ],
+      "clinical_safety_notice": "Ensure your birth preparedness plan includes immediate transport arrangements in case emergency danger signs develop prior to your due date."
+    },
+    {
+      "topic_id": "risk_high_alert",
+      "topic": "Pregnancy Danger Signs & Emergency Clinical Red Flags",
+      "category": "Emergency & Clinical Safety",
+      "example_user_questions": [
+        "What are the danger signs in pregnancy?",
+        "When should I go to the hospital immediately?",
+        "Is vaginal bleeding normal during pregnancy?",
+        "What should I do if my baby stops moving?",
+        "What are warning signs of pre-eclampsia?",
+        "I have severe headache, blurry vision, and epigastric pain—what does it mean?"
+      ],
+      "concise_educational_response": "Certain maternal symptoms indicate potential obstetric emergencies and require IMMEDIATE in-person medical evaluation by an obstetrician, gynecologist, or emergency maternity department. You must seek urgent medical care if you experience any of the following high-alert warning signs: (1) Any vaginal bleeding or spotting; (2) Leaking of watery fluid from the vagina (possible rupture of membranes); (3) Severe abdominal, pelvic, or epigastric (upper belly) pain; (4) Marked reduction or cessation of baby movements in the third trimester; (5) Severe, persistent headache, visual disturbances (blurriness, spots, flashing lights), or sudden severe swelling of the face, hands, or feet (classic warning signs of pre-eclampsia); (6) High fever, chills, or foul-smelling vaginal discharge; (7) Difficulty breathing, chest pain, or fainting. This chatbot cannot evaluate emergencies or calculate risk scores—seek emergency medical attention immediately.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Clinical Red-Flag Warning Principles & Scope of Practice",
+        "page_reference": "Main Guideline Executive Summary pp. ix–xi; Chapter 1.3 p. 2; Chapter 3.B.1 p. 40; Chapter 3.B.2 p. 54; Chapter 4 p. 101, 105; Summary Brief p. 1, p. 2",
+        "chapter_or_table": "Executive Summary & Chapter 1.3 Scope of the guideline"
+      },
+      "key_educational_takeaways": [
+        "Vaginal bleeding, fluid leakage, severe headache, visual changes, severe belly pain, fever, or reduced baby kicks are EMERGENCY red flags.",
+        "Never wait for your next scheduled appointment if a danger sign occurs.",
+        "Go directly to the nearest hospital emergency room or maternity emergency unit.",
+        "Bring your maternal health records and pregnancy case notes with you."
+      ],
+      "questions_to_ask_doctor": [
+        "What is the direct emergency hotline for your hospital's obstetric triage?",
+        "Where exactly should I report if I arrive at night with bleeding or labour symptoms?",
+        "Are there specific risk factors in my pregnancy I should be aware of?"
+      ],
+      "clinical_safety_notice": "EMERGENCY SAFETY ALERT: This chatbot is non-diagnostic and cannot provide clinical triage or emergency advice. If you have any red-flag symptoms, call your emergency medical services (e.g. 911, 112, 108) or go to the nearest emergency department right away."
+    },
+    {
+      "topic_id": "postnatal_care",
+      "topic": "Postnatal Care for Mother and Newborn",
+      "category": "Postpartum Care",
+      "example_user_questions": [
+        "What care is needed after giving birth?",
+        "When should my postnatal visits take place?",
+        "What does WHO recommend for mother and baby after delivery?",
+        "How is maternal recovery and lochia monitored?",
+        "What should I know about postpartum emotional health and baby blues?",
+        "When can I discuss postpartum family planning?"
+      ],
+      "concise_educational_response": "The World Health Organization emphasizes that the postnatal period (the first six weeks following childbirth) is a critical phase for maternal and newborn health. WHO recommendations on postnatal care highlight: (1) Timely home visits in the first week after birth (by midwives, skilled providers, or trained community health workers) are strongly recommended for maternal and newborn care. (2) Midwife-led continuity of care provides integrated care spanning the antenatal, intrapartum, and postnatal periods. (3) Essential postnatal assessments include monitoring uterine involution and lochia (vaginal discharge), checking blood pressure, assessing perineal or cesarean healing, and screening for signs of infection or postpartum haemorrhage. (4) Mental health support: Assessing emotional well-being and identifying postpartum depression or anxiety is vital. (5) Providing guidance and support for exclusive breastfeeding on demand, clean cord care for the newborn, and counselling on postpartum family planning choices.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & WHO Postnatal Care Guidelines",
+        "recommendation_code": "Guideline Section 3.E & Recommendation E.2; WHO 2013/2014 Postnatal Care Guidelines (Ref 196)",
+        "page_reference": "Main Guideline pp. 89–90 (MLCC), p. 96 (home visits in 1st week), p. 114; Summary Brief p. 1, p. 3 (Table 2)",
+        "chapter_or_table": "Chapter 3.E: Health systems interventions & Postnatal care guidelines (Ref 196)"
+      },
+      "key_educational_takeaways": [
+        "Home or clinic visits in the first week after birth are crucial to inspect maternal healing and newborn feeding and weight.",
+        "Postnatal lochia normally transitions from red to brownish to pale yellow/white over several weeks; sudden heavy bright red bleeding or foul odour requires urgent medical care.",
+        "Postpartum emotional health is just as important as physical health; discuss mood changes, tearfulness, or anxiety openly with healthcare providers.",
+        "Exclusive breastfeeding is recommended for the first six months of life.",
+        "Postpartum family planning discussions should occur before hospital discharge and during postnatal visits."
+      ],
+      "questions_to_ask_doctor": [
+        "When is my scheduled 6-week postnatal checkup, and will my baby have checks at the same visit?",
+        "What signs of infection or excessive bleeding should prompt me to call the clinic?",
+        "Which postpartum contraceptive methods are safe while breastfeeding?"
+      ],
+      "clinical_safety_notice": "Postpartum haemorrhage (soaking more than one sanitary pad per hour), foul-smelling discharge, high fever, or severe mood changes require prompt medical assessment."
+    },
+    {
+      "topic_id": "questions_to_ask_gynecologist",
+      "topic": "Questions to Ask Your Obstetrician / Gynecologist",
+      "category": "Patient-Provider Communication",
+      "example_user_questions": [
+        "What questions should I ask my gynecologist at my first visit?",
+        "What should I discuss with my OB/GYN during antenatal appointments?",
+        "What questions should I prepare for my doctor across different trimesters?",
+        "How can I communicate better with my maternity healthcare provider?",
+        "What to ask doctor about ultrasound and blood test results?"
+      ],
+      "concise_educational_response": "Effective communication between pregnant women and healthcare practitioners is an integral component of a positive pregnancy experience. WHO highlights respectful, woman-centred dialogue where women are encouraged to ask questions and participate in decisions regarding their care. Recommended questions to prepare for your gynecologist include: (1) First Trimester (up to 12 weeks): 'What is my estimated due date based on my early ultrasound?', 'Are my baseline blood counts and infectious disease tests normal?', 'What daily dose of elemental iron and folic acid is right for me?'. (2) Second Trimester (20–26 weeks): 'How is my blood pressure tracking?', 'Is my baby's growth and anatomy normal on ultrasound?', 'When should I take my oral glucose tolerance test (OGTT) for gestational diabetes?'. (3) Third Trimester (30–40 weeks): 'How should I monitor my baby's movements?', 'When will I receive my tetanus toxoid vaccine?', 'What is our plan for birth preparedness, and who can accompany me in labour?', 'What danger signs mean I should go to emergency immediately?'.",
+      "exact_source_reference": {
+        "document": "WHO recommendations on antenatal care for a positive pregnancy experience (2016) & Summary Brief (2018)",
+        "recommendation_code": "Communication Framework & Chapter 4: Table 2",
+        "page_reference": "Main Guideline pp. 105–107 (communication & person-centred care), pp. 108–116 (Table 2); Summary Brief p. 2, p. 10",
+        "chapter_or_table": "Chapter 4: Implementation of the ANC guideline and recommendations"
+      },
+      "key_educational_takeaways": [
+        "Write down your questions before every antenatal visit so you remember to cover them with your doctor.",
+        "Always feel empowered to ask your provider to explain medical terms or test results in clear language.",
+        "Discuss your birth plan and preferred labour companion well before your third trimester.",
+        "Make sure you know your doctor's protocol for emergency calls after clinic hours."
+      ],
+      "questions_to_ask_doctor": [
+        "Can you explain what my latest lab results mean for my pregnancy?",
+        "What is the best way to reach your team between scheduled appointments?",
+        "What signs should prompt me to go straight to the labor and delivery triage unit?"
+      ],
+      "clinical_safety_notice": "Always bring a list of your current supplements and medications to every antenatal visit for your gynecologist to review."
+    }
+  ]
+}

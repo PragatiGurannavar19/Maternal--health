@@ -1,0 +1,134 @@
+{
+  "safety_policy": {
+    "organization": "NurturaGyno",
+    "clinical_principle": "Strict rule-based educational assistant. Never diagnose, never calculate risk scores, never provide clinical decision support, and never give autonomous medical advice.",
+    "emergency_escalation_protocol": "Immediately display high-visibility emergency escalation banner, state strict non-diagnostic boundary, provide emergency advice to contact healthcare provider or emergency medical service, and cite WHO clinical escalation guidelines."
+  },
+  "emergency_red_flags": [
+    {
+      "category": "vaginal_bleeding",
+      "patterns": [
+        "bleeding",
+        "blood in underwear",
+        "vaginal bleed",
+        "spotting blood",
+        "passed a blood clot",
+        "heavy bleeding"
+      ],
+      "severity": "CRITICAL_EMERGENCY",
+      "action_instruction": "Vaginal bleeding during pregnancy requires immediate emergency obstetric assessment to rule out placental complications or preterm labour."
+    },
+    {
+      "category": "severe_pain",
+      "patterns": [
+        "severe abdominal pain",
+        "severe belly pain",
+        "sharp stomach cramp",
+        "unbearable pelvic pain",
+        "severe cramping",
+        "excruciating pain",
+        "severe epigastric pain",
+        "pain under ribs"
+      ],
+      "severity": "CRITICAL_EMERGENCY",
+      "action_instruction": "Severe abdominal or epigastric pain may indicate an acute obstetric condition such as placental abruption, severe pre-eclampsia, or ectopic complication. Seek emergency care immediately."
+    },
+    {
+      "category": "reduced_fetal_movement",
+      "patterns": [
+        "baby not moving",
+        "stopped kicking",
+        "fetal movement decreased",
+        "reduced movements",
+        "no kicks today",
+        "haven't felt baby move",
+        "baby has stopped moving"
+      ],
+      "severity": "CRITICAL_EMERGENCY",
+      "action_instruction": "A reduction or cessation of fetal movement in the third trimester is a recognized sign of potential fetal compromise. Contact your maternity hospital or obstetrician immediately for monitoring."
+    },
+    {
+      "category": "fluid_leakage",
+      "patterns": [
+        "water broke",
+        "leaking fluid",
+        "gush of water",
+        "fluid leaking from vagina",
+        "amniotic fluid leak",
+        "leaking amniotic"
+      ],
+      "severity": "CRITICAL_EMERGENCY",
+      "action_instruction": "Premature rupture of membranes or leaking amniotic fluid increases infection and preterm risks. Go to a maternity emergency facility right away."
+    },
+    {
+      "category": "preeclampsia_red_flags",
+      "patterns": [
+        "severe headache and blurry vision",
+        "headache with spots in eyes",
+        "flashing lights in vision",
+        "sudden swelling of face and hands",
+        "vision blurred and headache",
+        "extreme swelling face"
+      ],
+      "severity": "CRITICAL_EMERGENCY",
+      "action_instruction": "Severe persistent headache accompanied by vision changes (blurriness, spots) and sudden facial/hand swelling are warning signs of pre-eclampsia/eclampsia. Seek immediate medical evaluation."
+    },
+    {
+      "category": "systemic_emergency",
+      "patterns": [
+        "high fever and chills",
+        "fever over 39",
+        "fever over 102",
+        "difficulty breathing and chest pain",
+        "fainted",
+        "passed out while pregnant",
+        "foul smelling vaginal discharge"
+      ],
+      "severity": "CRITICAL_EMERGENCY",
+      "action_instruction": "High fever, respiratory distress, fainting, or foul-smelling discharge suggest severe systemic infection or cardiovascular compromise requiring emergency attention."
+    }
+  ],
+  "diagnostic_blockers": [
+    {
+      "category": "requesting_diagnosis",
+      "patterns": [
+        "do i have preeclampsia",
+        "do i have gestational diabetes",
+        "diagnose me",
+        "what illness do i have",
+        "is my baby abnormal",
+        "tell me if i have an infection",
+        "do i have chlamydia",
+        "do i have syphilis",
+        "is my fetus sick"
+      ],
+      "response_guidance": "I cannot diagnose medical conditions. Diagnosing conditions like pre-eclampsia, gestational diabetes, or infections requires laboratory testing, physical examination, and medical judgment by a licensed healthcare provider."
+    },
+    {
+      "category": "requesting_risk_score",
+      "patterns": [
+        "calculate my risk",
+        "what is my risk score",
+        "calculate risk score",
+        "give me my preeclampsia risk score",
+        "calculate preterm birth risk",
+        "score my pregnancy risk",
+        "risk calculator"
+      ],
+      "response_guidance": "As a rule-based educational assistant, I am strictly programmed not to calculate risk scores or clinical prognostic predictions. Please consult your obstetrician for individualized risk assessments."
+    },
+    {
+      "category": "requesting_prescriptions_or_treatment_changes",
+      "patterns": [
+        "what medicine should i take",
+        "prescribe me medication",
+        "should i stop my medication",
+        "change my dose",
+        "can i take ibuprofen",
+        "how many mg of insulin should i inject",
+        "what antibiotic should i buy"
+      ],
+      "response_guidance": "I cannot prescribe medications or recommend changes to medical treatments. All medication decisions, dosing alterations, and prescriptions must be made directly by your gynecologist or physician."
+    }
+  ]
+}

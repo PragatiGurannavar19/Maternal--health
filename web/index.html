@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NurturaGyno - Maternal Health Educational Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="header-brand">
+        <div class="brand-icon">🌸</div>
+        <div class="brand-text">
+          <h1>NurturaGyno</h1>
+          <p class="brand-tagline">Antenatal Health Education • Based on WHO 2016 Recommendations</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="btn-topic-drawer" class="action-btn" title="Open Topic Explorer">
+          <span class="icon">📚</span> Topic Library
+        </button>
+        <button id="btn-print-notes" class="action-btn" title="Print or save chat">
+          <span class="icon">🖨️</span> Print Notes
+        </button>
+        <button id="btn-reset-chat" class="action-btn secondary" title="Reset conversation">
+          <span class="icon">🔄</span> Reset
+        </button>
+      </div>
+    </header>
+
+    <!-- Permanent Clinical Safety Banner -->
+    <section class="safety-banner">
+      <div class="safety-banner-content">
+        <span class="shield-badge">🛡️ NON-DIAGNOSTIC NOTICE</span>
+        <p>
+          This chatbot is an <strong>educational assistant</strong> strictly aligned with official WHO Antenatal Care guidelines. 
+          It <strong>does not diagnose</strong>, calculate risk scores, or give individualized medical advice. 
+          If you experience pain, bleeding, leaking water, high fever, or reduced baby kicks, seek 
+          <span class="emergency-highlight">immediate emergency medical care</span>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick Educational Topic Chips -->
+    <nav class="quick-topics-bar" aria-label="Quick topic prompts">
+      <span class="quick-topics-label">Explore WHO Topics:</span>
+      <div class="chips-scroll" id="quick-chips-container">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </nav>
+
+    <!-- Chat Stream Area -->
+    <main class="chat-main" id="chat-feed" role="log" aria-live="polite">
+      <!-- Chat bubbles injected here -->
+    </main>
+
+    <!-- Message Input Bar -->
+    <footer class="chat-input-bar">
+      <form id="chat-form" class="input-form">
+        <div class="input-wrapper">
+          <textarea 
+            id="chat-input" 
+            placeholder="Ask about antenatal care, nutrition, ultrasound, tests, safe exercise, vaccines, or symptoms..." 
+            rows="1" 
+            maxlength="1000"
+            required></textarea>
+        </div>
+        <button type="submit" id="btn-send" class="btn-send" aria-label="Send query">
+          <span class="send-icon">➤</span>
+        </button>
+      </form>
+      <div class="input-footer-hint">
+        Rule-based deterministic engine • Verifiable citations from WHO recommendations on antenatal care
+      </div>
+    </footer>
+  </div>
+
+  <!-- Slide-Out Topic Explorer Modal / Drawer -->
+  <div id="topic-drawer-overlay" class="drawer-overlay hidden">
+    <aside class="topic-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <div class="drawer-header">
+        <div class="drawer-header-left">
+          <span class="icon">📖</span>
+          <h2 id="drawer-title">WHO Antenatal Knowledge Base</h2>
+        </div>
+        <button id="btn-close-drawer" class="btn-icon" aria-label="Close drawer">✕</button>
+      </div>
+      <div class="drawer-search">
+        <input type="text" id="drawer-search-input" placeholder="Search topics (e.g. iron, calcium, ultrasound, scan, visit)...">
+      </div>
+      <div class="drawer-content" id="drawer-topics-list">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
